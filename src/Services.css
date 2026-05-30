@@ -1,0 +1,67 @@
+/* Services.css - styles for the Services page */
+
+.services {
+  min-height: calc(100vh - 65px);
+  background: #0f0f1a;
+  color: white;
+  padding: 3rem 4rem;
+}
+
+.services h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* "Services" word gets purple */
+.services h1 span { color: #6c63ff; }
+
+.subtitle {
+  text-align: center;
+  color: #888;
+  margin-bottom: 2.5rem;
+}
+
+/* 3 columns, 2 rows grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* each service card */
+.service-card {
+  background: #16213e;
+  border: 1px solid rgba(108, 99, 255, 0.25);
+  border-radius: 12px;
+  padding: 1.8rem 1.5rem;
+  text-align: center;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+/* card lifts up and border gets brighter on hover */
+.service-card:hover {
+  transform: translateY(-4px);
+  border-color: #6c63ff;
+}
+
+/* emoji icon */
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.05rem;
+  color: white;
+  margin-bottom: 0.8rem;
+}
+
+.service-card p {
+  color: #b0b0c8;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  margin: 0;
+}

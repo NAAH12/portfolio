@@ -1,0 +1,86 @@
+/* Home.css - styles only for the Home page */
+
+/* global body styles - these apply to the whole app */
+body {
+  margin: 0; /* removes default white space the browser adds */
+  background: #0f0f1a; /* dark background color */
+  font-family: 'Segoe UI', sans-serif; /* font for the whole app */
+}
+
+/* main container for the Home page */
+.home {
+  min-height: calc(100vh - 65px); /* full screen height minus the navbar */
+  background: #0f0f1a;
+  display: flex;           /* flexbox to align everything */
+  flex-direction: column;  /* stack elements vertically */
+  align-items: center;     /* center horizontally */
+  justify-content: center; /* center vertically */
+  text-align: center;
+  padding: 2rem;
+}
+
+/* main title */
+.home h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+/* the span inside h1 - makes my name purple */
+.home h1 span {
+  color: #6c63ff;
+}
+
+/* subtitle - softer color than white */
+.home h2 {
+  font-size: 1.4rem;
+  color: #a0a0cc;
+  font-weight: 400; /* thinner text, not bold */
+  margin-bottom: 1.5rem;
+}
+
+/* mission paragraph */
+.mission {
+  color: #b0b0c8;
+  font-size: 1rem;
+  line-height: 1.8; /* more space between lines, easier to read */
+  max-width: 550px; /* limits width so text doesn't stretch too wide */
+  margin-bottom: 2rem;
+}
+
+/* buttons wrapper - puts them side by side */
+.home-buttons {
+  display: flex;
+  gap: 1rem; /* space between the two buttons */
+}
+
+/* main button - solid purple background */
+.btn-main {
+  padding: 12px 28px;
+  background: #6c63ff;
+  color: white;
+  border-radius: 8px;    /* rounded corners */
+  text-decoration: none; /* removes the underline from the link */
+  font-weight: 600;
+  transition: background 0.2s; /* smooth animation on hover */
+}
+
+/* darker purple when hovering */
+.btn-main:hover { background: #5a52e0; }
+
+/* outline button - transparent with purple border */
+.btn-outline {
+  padding: 12px 28px;
+  background: transparent;
+  color: #6c63ff;
+  border: 2px solid #6c63ff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+/* soft purple background on hover */
+.btn-outline:hover {
+  background: rgba(108, 99, 255, 0.1);
+}

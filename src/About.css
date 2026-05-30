@@ -1,0 +1,86 @@
+/* About.css - styles only for the About page */
+
+.about {
+  min-height: calc(100vh - 65px); /* full height minus navbar */
+  background: #0f0f1a;
+  color: white;
+  padding: 3rem 4rem;
+}
+
+/* page title */
+.about h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: white;
+}
+
+/* the word "Me" in the title gets purple color */
+.about h1 span {
+  color: #6c63ff;
+}
+
+/* two column layout using flexbox */
+.about-content {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start; /* align items to the top */
+  max-width: 900px;
+  margin: 0 auto; /* centers the content horizontally */
+}
+
+/* LEFT column */
+.about-left {
+  display: flex;
+  flex-direction: column; /* photo on top, button below */
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0; /* prevents this column from shrinking */
+}
+
+/* profile photo styles */
+.profile-photo {
+  width: 220px;
+  height: 260px;
+  object-fit: cover; /* crops the image to fit without stretching */
+  border-radius: 12px;
+  border: 3px solid #6c63ff; /* purple border around photo */
+}
+
+/* resume download button */
+.resume-btn {
+  display: block;
+  padding: 10px 20px;
+  background: #6c63ff;
+  color: white;
+  text-decoration: none; /* removes underline */
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  transition: background 0.2s;
+  width: 100%; /* button takes full width of left column */
+}
+
+.resume-btn:hover { background: #5a52e0; }
+
+/* RIGHT column */
+.about-right h2 {
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 0.3rem;
+}
+
+/* subtitle under the name */
+.role {
+  color: #6c63ff;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+/* bio paragraphs */
+.bio {
+  color: #b0b0c8;
+  line-height: 1.8; /* comfortable reading spacing */
+  margin-bottom: 1rem;
+  font-size: 0.98rem;
+}

@@ -1,0 +1,93 @@
+/* Education.css - styles for the Education page */
+
+/* main container */
+.education {
+  min-height: calc(100vh - 65px); /* full height minus navbar */
+  background: #0f0f1a;
+  color: white;
+  padding: 3rem 4rem;
+}
+
+/* page title */
+.education h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* "Education" word gets purple */
+.education h1 span { color: #6c63ff; }
+
+.subtitle {
+  text-align: center;
+  color: #888;
+  margin-bottom: 3rem;
+}
+
+/* timeline vertical container */
+/* border-left creates the vertical purple line on the left */
+.timeline {
+  max-width: 700px;
+  margin: 0 auto; /* centers the timeline */
+  position: relative;
+  padding-left: 2rem; /* space for the line and dots */
+  border-left: 2px solid rgba(108, 99, 255, 0.4);
+}
+
+/* each education item */
+.timeline-item {
+  position: relative; /* needed to position the dot */
+  margin-bottom: 2rem;
+}
+
+/* the purple circle dot on the timeline line */
+/* position: absolute places it relative to timeline-item */
+.dot {
+  width: 14px;
+  height: 14px;
+  background: #6c63ff;
+  border-radius: 50%; /* makes it a perfect circle */
+  position: absolute;
+  left: -2.65rem; /* moves it to sit on the vertical line */
+  top: 1.2rem;
+}
+
+/* the card for each education item */
+.timeline-card {
+  background: #16213e;
+  border: 1px solid rgba(108, 99, 255, 0.25);
+  border-radius: 12px;
+  padding: 1.3rem 1.5rem;
+}
+
+/* date badge - pill shaped */
+.date {
+  background: rgba(108, 99, 255, 0.2);
+  color: #a09ff0;
+  padding: 3px 12px;
+  border-radius: 99px; /* pill shape */
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+/* degree name */
+.timeline-card h3 {
+  color: white;
+  font-size: 1.1rem;
+  margin: 0.7rem 0 0.3rem; /* space above and below */
+}
+
+/* school name in purple */
+.school {
+  color: #6c63ff;
+  font-size: 0.9rem;
+  margin-bottom: 0.7rem;
+}
+
+/* description text */
+.desc {
+  color: #b0b0c8;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 0;
+}

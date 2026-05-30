@@ -1,0 +1,102 @@
+/* Project.css - styles for the Projects page */
+
+/* main container - full height minus the navbar */
+.projects {
+  min-height: calc(100vh - 65px);
+  background: #0f0f1a; /* dark background */
+  color: white;
+  padding: 3rem 4rem; /* space around all content */
+}
+
+/* page title */
+.projects h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* "Projects" word gets purple color */
+.projects h1 span { color: #6c63ff; }
+
+/* small text under the title */
+.subtitle {
+  text-align: center;
+  color: #888; /* gray color, less important than title */
+  margin-bottom: 2.5rem;
+}
+
+/* grid layout - creates 3 equal columns automatically */
+/* repeat(3, 1fr) means: 3 columns, each takes equal space */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem; /* space between cards */
+  max-width: 1100px;
+  margin: 0 auto; /* centers the grid horizontally */
+}
+
+/* each individual project card */
+.project-card {
+  background: #16213e; /* slightly lighter than page background */
+  border-radius: 12px; /* rounded corners */
+  border: 1px solid rgba(108, 99, 255, 0.3); /* subtle purple border */
+  overflow: hidden; /* keeps content inside rounded corners */
+  transition: transform 0.2s; /* smooth animation when hovering */
+}
+
+/* card moves up slightly when mouse hovers over it */
+.project-card:hover { transform: translateY(-4px); }
+
+/* colored area at the top of each card - acts as image placeholder */
+.project-img {
+  width: 100%;
+  height: 140px;
+  background: rgba(108, 99, 255, 0.15); /* transparent purple */
+  display: flex;
+  align-items: center; /* centers content vertically */
+  justify-content: center; /* centers content horizontally */
+  color: #6c63ff;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(108, 99, 255, 0.2);
+}
+
+/* text area inside each card */
+.project-info {
+  padding: 1.2rem; /* space inside the card */
+}
+
+/* project name */
+.project-info h3 {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 0.8rem;
+}
+
+/* description paragraphs */
+.project-info p {
+  color: #b0b0c8; /* soft gray-blue color */
+  font-size: 0.88rem;
+  line-height: 1.6; /* comfortable reading spacing */
+  margin-bottom: 0.5rem;
+}
+
+/* bold words like "My Role:" and "Outcome:" get purple */
+.project-info strong { color: #6c63ff; }
+
+/* container for technology tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap; /* tags wrap to next line if too many */
+  gap: 6px; /* space between tags */
+  margin-top: 0.8rem;
+}
+
+/* each individual technology tag - pill shape */
+.tags span {
+  padding: 3px 10px;
+  background: rgba(108, 99, 255, 0.2);
+  border: 1px solid rgba(108, 99, 255, 0.4);
+  border-radius: 99px; /* very high value = fully rounded pill shape */
+  color: #a09ff0;
+  font-size: 0.78rem;
+}

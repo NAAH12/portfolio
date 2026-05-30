@@ -1,0 +1,141 @@
+/* Contact.css - styles for the Contact page */
+
+/* main container */
+.contact {
+  min-height: calc(100vh - 65px);
+  background: #0f0f1a;
+  color: white;
+  padding: 3rem 4rem;
+}
+
+/* page title */
+.contact h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* "Me" gets purple color */
+.contact h1 span { color: #6c63ff; }
+
+.subtitle {
+  text-align: center;
+  color: #888;
+  margin-bottom: 2.5rem;
+}
+
+/* two column layout */
+.contact-content {
+  display: flex;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+/* LEFT - info panel */
+.contact-info {
+  background: #16213e;
+  border: 1px solid rgba(108, 99, 255, 0.25);
+  border-radius: 12px;
+  padding: 2rem;
+  flex-shrink: 0; /* prevents this column from shrinking */
+  width: 260px;
+}
+
+.contact-info h3 {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+/* each contact detail row */
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+/* label above each value */
+.info-label {
+  font-size: 0.75rem;
+  color: #888;
+  margin: 0 0 2px;
+  text-transform: uppercase; /* makes text all caps */
+  letter-spacing: 0.5px;
+}
+
+.info-value {
+  font-size: 0.88rem;
+  color: #d0d0e8;
+  margin: 0;
+}
+
+/* RIGHT - form */
+.contact-form {
+  flex: 1; /* takes all remaining space */
+}
+
+/* two fields side by side */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  gap: 1rem;
+}
+
+/* each field group - label + input stacked */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-size: 0.88rem;
+  color: #ccc;
+  font-weight: 500;
+}
+
+/* styles for all inputs and textarea */
+.form-group input,
+.form-group textarea {
+  background: #16213e;
+  border: 1px solid rgba(108, 99, 255, 0.35);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: white;
+  font-size: 0.9rem;
+  outline: none; /* removes default browser focus ring */
+  transition: border-color 0.2s;
+  font-family: inherit; /* uses same font as rest of page */
+}
+
+/* border turns brighter purple when clicking on a field */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #6c63ff;
+}
+
+/* placeholder text color */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #555;
+}
+
+/* submit button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #6c63ff;
+  color: white;
+  border: none; /* removes default button border */
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer; /* shows hand cursor on hover */
+  transition: background 0.2s;
+}
+
+.submit-btn:hover { background: #5a52e0; }
