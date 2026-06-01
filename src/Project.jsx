@@ -18,7 +18,7 @@ export default function Project() {
         {/* PROJECT 1 */}
         <div className="project-card">
           {/* project image placeholder - replace with real img when ready */}
-          <div className="project-img">🖼️ Image Gallery</div>
+          <img src='/gallery.png' alt='Image Gallery'></img>
           <div className="project-info">
             <h3>Image Gallery</h3>
             {/* my role in this project */}
@@ -41,7 +41,7 @@ export default function Project() {
 
         {/* PROJECT 2 */}
         <div className="project-card">
-          <div className="project-img">🚌 Bus Transport App</div>
+          <img src='/bus.png' alt='Bus stops app'></img>
           <div className="project-info">
             <h3>Bus Transport System</h3>
             <p><strong>My Role:</strong> Software Developer</p>

@@ -75,7 +75,7 @@ export default function Contact() {
             <span>📧</span>
             <div>
               <p className="info-label">Email</p>
-              <p className="info-value">nicolasariza@email.com</p>
+              <p className="info-value">nicolasariza120@email.com</p>
             </div>
           </div>
 
@@ -83,7 +83,7 @@ export default function Contact() {
             <span>📱</span>
             <div>
               <p className="info-label">Phone</p>
-              <p className="info-value">+1 (416) 000-0000</p>
+              <p className="info-value">+1 (437) 602-8638</p>
             </div>
           </div>
 
@@ -99,7 +99,7 @@ export default function Contact() {
             <span>💼</span>
             <div>
               <p className="info-label">LinkedIn</p>
-              <p className="info-value">linkedin.com/in/nicolasariza</p>
+              <p className="info-value">https://www.linkedin.com/in/nicolas-a-ariza-h/</p>
             </div>
           </div>
         </div>
